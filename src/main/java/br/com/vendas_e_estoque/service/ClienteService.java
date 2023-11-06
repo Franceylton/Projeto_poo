@@ -5,19 +5,19 @@ import java.util.List;
 
 import br.com.vendas_e_estoque.model.Cliente;
 
-public class ClienteModel implements I_CrudSystem<Cliente> {
+public class ClienteService implements I_CrudSystem<Cliente> {
 
-	private static ClienteModel clienteModel;
+	private static ClienteService clienteModel;
 
 	private static List<Cliente> listCliente = new ArrayList<>();
 
-	private ClienteModel() {
+	private ClienteService() {
 
 	} 
 
-	public static final ClienteModel getInstance() {
+	public static final ClienteService getInstance() {
 		if (clienteModel == null) {
-			clienteModel = new ClienteModel(); 
+			clienteModel = new ClienteService(); 
 		}
 		return clienteModel;
 	}
