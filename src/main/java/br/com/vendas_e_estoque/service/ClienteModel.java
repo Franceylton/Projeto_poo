@@ -13,11 +13,11 @@ public class ClienteModel implements I_CrudSystem<Cliente> {
 
 	private ClienteModel() {
 
-	}
+	} 
 
 	public static final ClienteModel getInstance() {
 		if (clienteModel == null) {
-			clienteModel = new ClienteModel();
+			clienteModel = new ClienteModel(); 
 		}
 		return clienteModel;
 	}
@@ -39,7 +39,6 @@ public class ClienteModel implements I_CrudSystem<Cliente> {
 
 	@Override
 	public List<Cliente> listObjects(Cliente obj) {
-		// TODO Auto-generated method stub
 		return null;
 	}
 
