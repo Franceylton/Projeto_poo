@@ -1,4 +1,4 @@
-package br.com.vendas_e_estoque.model.entities;
+package br.com.vendas_e_estoque.model;
 
 import java.util.Date;
 import java.util.List;
@@ -10,6 +10,10 @@ public class Dependente {
 	private String nome_dependente;
 	private Date data_cadastro;
 	private Date data_retirada;
+	
+	public Dependente() {
+		super();
+	}
 
 	public Dependente(Integer cod_dependente, List<Funcionario> cod_cpf_funcionario, String nome_dependente,
 			Date data_cadastro, Date data_retirada) {

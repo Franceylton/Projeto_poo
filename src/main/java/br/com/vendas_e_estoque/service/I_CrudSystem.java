@@ -1,4 +1,4 @@
-package br.com.vendas_e_estoque.model.interfacesEntities;
+package br.com.vendas_e_estoque.service;
 
 import java.util.List;
 

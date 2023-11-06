@@ -1,4 +1,4 @@
-package br.com.vendas_e_estoque.model.entities;
+package br.com.vendas_e_estoque.model;
 
 import java.util.Date;
 
@@ -8,6 +8,10 @@ public class Estoque {
 	private String descricao_estoque;
 	private Date data_saida_prod;
 	private Date data_entrada_prod;
+	
+	public Estoque() {
+		super();
+	}
 
 	public Estoque(Integer cod_estoque, String descricao_estoque, Date data_saida_prod, Date data_entrada_prod) {
 		super();

@@ -1,4 +1,4 @@
-package br.com.vendas_e_estoque.model.entities;
+package br.com.vendas_e_estoque.model;
 
 public class Endereco {
 
@@ -7,7 +7,10 @@ public class Endereco {
 	private String estado_end;
 	private String cep_end;
 	private String rua_end;
-
+	
+	public Endereco() {
+		super();
+	}
 	public Endereco(String numero_end, String cidade_end, String estado_end, String cep_end, String rua_end) {
 		super();
 		this.numero_end = numero_end;

@@ -1,4 +1,4 @@
-package br.com.vendas_e_estoque.model.entities;
+package br.com.vendas_e_estoque.model;
 
 import java.util.Date;
 import java.util.List;
@@ -15,6 +15,10 @@ public class Funcionario extends Pessoa {
 	private Date data_demissao;
 	private Date data_inicio_trab_dep;
 	private Date data_fim_trab_dep;
+	
+	public Funcionario() {
+		super();
+	}
 
 	public Funcionario(String cpf_pessoa, String nome, String sobrenome, char sexo, String email, Date data_nascimento,
 			Endereco endereco, List<Telefone> telefone, String matricula_func, Departamento departamento,

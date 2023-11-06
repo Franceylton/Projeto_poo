@@ -1,4 +1,4 @@
-package br.com.vendas_e_estoque.model.entities;
+package br.com.vendas_e_estoque.model;
 
 import java.util.Date;
 import java.util.List;
@@ -10,6 +10,10 @@ public class Departamento {
 	private String descricao_departamento;
 	private Date data_inicio_gerenciamento;
 	private Date data_fim_gerenciamento;
+	
+	public Departamento() {
+		super();
+	}
 
 	public Departamento(Integer cod_departamento, List<Funcionario> funcionario_gerente, String descricao_departamento,
 			Date data_inicio_gerenciamento, Date data_fim_gerenciamento) {

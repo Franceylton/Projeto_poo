@@ -1,4 +1,4 @@
-package br.com.vendas_e_estoque.model.entities;
+package br.com.vendas_e_estoque.model;
 
 import java.util.Date;
 import java.util.List;
@@ -9,6 +9,10 @@ public class Pagamento {
 	private List<Venda> num_cupomfiscal_pag;
 	private String tipo_pagamento;
 	private Date data_pagamento;
+	
+	public Pagamento() {
+		super();
+	}
 
 	public Pagamento(Integer cod_pagamento, List<Venda> num_cupomfiscal_pag, String tipo_pagamento,
 			Date data_pagamento) {

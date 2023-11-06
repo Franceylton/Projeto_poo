@@ -1,4 +1,4 @@
-package br.com.vendas_e_estoque.model.entities;
+package br.com.vendas_e_estoque.model;
 
 import java.util.Date;
 import java.util.List;
@@ -11,6 +11,10 @@ public class Venda {
 	private double desconto;
 	private double valor_total;
 	private Date data_compra;
+	
+	public Venda() {
+		super();
+	}
 
 	public Venda(Integer num_cupom_fiscal, List<Cliente> cpf_cliente_compra, List<Funcionario> cpf_func_venda,
 			double desconto, double valor_total, Date data_compra) {

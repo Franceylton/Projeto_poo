@@ -1,4 +1,4 @@
-package br.com.vendas_e_estoque.model.entities;
+package br.com.vendas_e_estoque.model;
 
 import java.util.Date;
 import java.util.List;
@@ -13,6 +13,10 @@ public abstract class Pessoa {
 	public Date data_nascimento;
 	public Endereco endereco;
 	public List<Telefone> telefone;
+
+	public Pessoa() {
+		super();
+	}
 
 	public Pessoa(String cpf_pessoa, String nome, String sobrenome, char sexo, String email, Date data_nascimento,
 			Endereco endereco, List<Telefone> telefone) {

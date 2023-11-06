@@ -1,4 +1,4 @@
-package br.com.vendas_e_estoque.model.entities;
+package br.com.vendas_e_estoque.model;
 
 import java.util.Date;
 import java.util.List;
@@ -15,6 +15,10 @@ public class Produto {
 	private int quantidade;
 	private double valor_de_compra;
 	private double valor_de_venda;
+
+	public Produto() {
+		super();
+	}
 
 	public Produto(Integer cod_produto, List<Estoque> cod_estoque, String descricao_prod, Date data_fabricacao_prod,
 			Date data_validade_prod, String fabricante, String distribuidor_prod, int quantidade,

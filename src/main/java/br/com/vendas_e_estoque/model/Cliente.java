@@ -1,11 +1,15 @@
-package br.com.vendas_e_estoque.model.entities;
+package br.com.vendas_e_estoque.model;
 
 import java.util.Date;
 import java.util.List;
 
-public class Cliente extends Pessoa {
+public class Cliente extends Pessoa{
 
 	private Date data_de_Cadastro;
+	
+	public Cliente() {
+		super();
+	}
 
 	public Cliente(String cpf_pessoa, String nome, String sobrenome, char sexo, String email, Date data_nascimento,
 			Endereco endereco, List<Telefone> telefone, Date data_de_Cadastro) {

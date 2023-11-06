@@ -1,8 +1,12 @@
-package br.com.vendas_e_estoque.model.entities;
+package br.com.vendas_e_estoque.model;
 
 public class Telefone {
 
 	private String numeroTelefone;
+	
+	public Telefone() {
+		super();
+	}
 
 	public Telefone(String numeroTelefone) {
 		super();
