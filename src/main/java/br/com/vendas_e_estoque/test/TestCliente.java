@@ -53,7 +53,7 @@ public class TestCliente {
 						c = new Cliente(nome, sobrenome, cpf_pessoa);
 						ClienteService.getInstance().inserir(c);
 
-						System.out.println("Cliente Salvo");
+						System.out.println("Cliente Salvo"); 
 						break;
 
 					} catch (NullPointerException npe) {
