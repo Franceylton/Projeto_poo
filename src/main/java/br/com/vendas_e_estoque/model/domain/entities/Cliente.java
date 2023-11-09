@@ -1,4 +1,4 @@
-package br.com.vendas_e_estoque.model;
+package br.com.vendas_e_estoque.model.domain.entities;
 
 import java.util.Date;
 import java.util.List;
@@ -10,7 +10,12 @@ public class Cliente extends Pessoa{
 	public Cliente() {
 		super();
 	}
-
+	
+	public Cliente(String nome, String sobrenome, String cpf_Pessoa) {
+		this.nome = nome;
+		this.sobrenome = sobrenome;
+		this.cpf_pessoa = cpf_Pessoa;
+	}
 	public Cliente(String cpf_pessoa, String nome, String sobrenome, char sexo, String email, Date data_nascimento,
 			Endereco endereco, List<Telefone> telefone, Date data_de_Cadastro) {
 		super(cpf_pessoa, nome, sobrenome, sexo, email, data_nascimento, endereco, telefone);

@@ -1,4 +1,4 @@
-package br.com.vendas_e_estoque.model;
+package br.com.vendas_e_estoque.model.domain.entities;
 
 public class Telefone {
 
